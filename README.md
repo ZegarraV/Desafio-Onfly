@@ -38,7 +38,9 @@ cd [NOME_DO_REPOSITORIO]
 
 # Instale as dependências
 npm install
-
+2. Executar o Serviço Localmente (Docker)
+bash
+Copiar código
 # Compile o conector TypeScript para JavaScript
 npm run build
 
@@ -47,20 +49,19 @@ docker-compose up -d
 
 # (Opcional) Verifique logs em tempo real
 docker-compose logs -f
-
 A interface do n8n estará disponível em: http://localhost:5678
 
 Para parar todos os serviços:
 
+bash
+Copiar código
 docker-compose down
-
-
 Para remover volumes persistentes:
 
+bash
+Copiar código
 docker-compose down -v
-
 3. Configurar o Ambiente
-
 Toda a configuração é gerenciada pelo arquivo docker-compose.yml
 
 Banco de dados: PostgreSQL configurado automaticamente com usuário, senha e banco padrão
@@ -68,7 +69,6 @@ Banco de dados: PostgreSQL configurado automaticamente com usuário, senha e ban
 Variáveis do n8n: Já definidas no docker-compose.yml, incluindo suporte a carregamento de conectores customizados (N8N_CUSTOM_EXTENSIONS)
 
 4. Executar os Testes
-
 Testes manuais e funcionais na interface do n8n:
 
 Acesse http://localhost:5678
@@ -86,6 +86,8 @@ Verifique a aba Output para confirmar que o número aleatório foi gerado
 Não há testes automatizados (npm test) configurados, pois o foco é a integração e funcionamento do nó no n8n.
 
 📂 Estrutura do Projeto
+text
+Copiar código
 .
 ├── nodes/
 │   └── n8n-nodes-random/
@@ -100,9 +102,7 @@ Não há testes automatizados (npm test) configurados, pois o foco é a integra�
 ├── package.json                 # Dependências de desenvolvimento
 ├── tsconfig.json                # Configuração raiz TypeScript
 └── README.md
-
 ℹ️ Informações Adicionais
-
 Base do Projeto: Desenvolvido a partir do n8n-nodes-starter
 
 Depuração: Ajustes para compilação TypeScript, volumes Docker e ícones SVG
@@ -110,7 +110,8 @@ Depuração: Ajustes para compilação TypeScript, volumes Docker e ícones SVG
 Desenvolvedor: Vinicius Zegarra Palhares
 
 🔗 Referências
+Documentação Oficial n8n - Criando Nós Customizados
 
-https://docs.n8n.io/nodes/creating-nodes/
+Random.org API
 
-https://www.random.org/clients/http/
+
