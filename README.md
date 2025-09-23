@@ -87,13 +87,12 @@ Os testes para este projeto são **manuais e funcionais**, realizados diretament
 ## 📂 Estrutura do Projeto
 ```
 .
+├── dist/   
 ├── nodes/
 │   └── n8n-nodes-random/
-│       ├── dist/               # Código JS compilado (lido pelo n8n)
 │       ├── src/
 │       │   ├── Random.node.ts    # Código-fonte principal
-│       │   └── icons/
-│       │       └── Random.node.svg # Ícone do nó
+│       │   └── Random.node.svg   # Ícone do nó (Estrutura ajustada)
 │       ├── package.json          # "Identidade" do nó
 │       └── tsconfig.json         # Configuração TypeScript do nó
 ├── docker-compose.yml          # Orquestração Docker do n8n e Postgres
