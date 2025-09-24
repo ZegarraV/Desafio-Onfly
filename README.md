@@ -1,5 +1,4 @@
 
-=======
 # 🎲 n8n Custom Node: Random Number Generator (Desafio Onfly)
 
 [![Node.js](https://img.shields.io/badge/Node.js-v22-brightgreen)](https://nodejs.org/) [![Docker](https://img.shields.io/badge/Docker-Desktop-blue)](https://www.docker.com/products/docker-desktop/) [![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
